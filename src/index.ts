@@ -5,14 +5,12 @@ import { LinkedList } from './LinkedList';
 
 // Sort array of numbers
 const numbersCollection = new NumbersCollection([1, -19, 4, -5, 5]);
-const sorter = new Sorter(numbersCollection);
-sorter.sort();
+numbersCollection.sort();
 console.log(numbersCollection.data);
 
 // Sort string characters
 const charactersCollection = new CharactersCollection('Xxaydsbljiurtom');
-const characterSorter = new Sorter(charactersCollection);
-characterSorter.sort();
+charactersCollection.sort();
 console.log(charactersCollection.data);
 
 // Sort linked list values
@@ -22,6 +20,5 @@ linkedList.add(-5);
 linkedList.add(22);
 linkedList.add(10);
 
-const linkedListSorter = new Sorter(linkedList);
-linkedListSorter.sort();
+linkedList.sort();
 linkedList.print();
